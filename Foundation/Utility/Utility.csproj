@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D4FE296-57F4-435D-8B2F-86C5E6C8399C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Std.Utility</RootNamespace>
+    <AssemblyName>Std.Utility</AssemblyName>
+    <TargetFrameworkVersion Condition=" '$(Configuration)' != 'Debug45' ">v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug45|AnyCPU' ">
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>3021</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>3021</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>3021</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Units.cs" />
+    <Compile Include="Collections\Generic\Deque.cs" />
+    <Compile Include="Collections\Generic\Errors.cs" />
+    <Compile Include="Collections\Generic\IDeque.cs" />
+    <Compile Include="Collections\Generic\MultiValueDictionary{TKey,Talue}.cs" />
+    <Compile Include="Collections\Generic\Requires.cs" />
+    <Compile Include="Collections\Generic\ValidatedNotNullAttribute.cs" />
+    <Compile Include="Collections\HybridDictionary.cs" />
+    <Compile Include="Collections\HybridDictionaryDebugView.cs" />
+    <Compile Include="Collections\HybridDictionaryKeyCollectionDebugView.cs" />
+    <Compile Include="Collections\HybridDictionaryValueCollectionDebugView.cs" />
+    <Compile Include="Collections\MultipleCollectionEnumerable.cs" />
+    <Compile Include="Collections\Empty.cs" />
+    <Compile Include="Collections\Empty.Internal.cs" />
+    <Compile Include="EnumerableExtensions.cs" />
+    <Compile Include="IO\FileChangeWatcher.cs" />
+    <Compile Include="IO\FileHelpers.cs" />
+    <Compile Include="IO\StreamHelpers.cs" />
+    <Compile Include="Linq\Acquire.cs" />
+    <Compile Include="Linq\Assert.cs" />
+    <Compile Include="Linq\AssertCount.cs" />
+    <Compile Include="Linq\Batch.cs" />
+    <Compile Include="Linq\Cartesian.cs" />
+    <Compile Include="Linq\Concat.cs" />
+    <Compile Include="Linq\Consume.cs" />
+    <Compile Include="Linq\DistinctBy.cs" />
+    <Compile Include="Linq\EquiZip.cs" />
+    <Compile Include="Linq\ExceptBy.cs" />
+    <Compile Include="Linq\Exclude.cs" />
+    <Compile Include="Linq\Execute.cs" />
+    <Compile Include="Linq\Fold.cs" />
+    <Compile Include="Linq\Fold.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fold.g.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Linq\ForEach.cs" />
+    <Compile Include="Linq\Generate.cs" />
+    <Compile Include="Linq\GenerateByIndex.cs" />
+    <Compile Include="Linq\GroupAdjacent.cs" />
+    <Compile Include="Linq\Incremental.cs" />
+    <Compile Include="Linq\Index.cs" />
+    <Compile Include="Linq\Interleave.cs" />
+    <Compile Include="Linq\Lag.cs" />
+    <Compile Include="Linq\Lead.cs" />
+    <Compile Include="Linq\MaxBy.cs" />
+    <Compile Include="Linq\MinBy.cs" />
+    <Compile Include="Linq\MoreEnumerable.cs" />
+    <Compile Include="Linq\NestedLoops.cs" />
+    <Compile Include="Linq\OrderBy.cs" />
+    <Compile Include="Linq\OrderByDirection.cs" />
+    <Compile Include="Linq\OrderedMerge.cs" />
+    <Compile Include="Linq\Pad.cs" />
+    <Compile Include="Linq\Pairwise.cs" />
+    <Compile Include="Linq\Partition.cs" />
+    <Compile Include="Linq\Permutations.cs" />
+    <Compile Include="Linq\Pipe.cs" />
+    <Compile Include="Linq\Prepend.cs" />
+    <Compile Include="Linq\PreScan.cs" />
+    <Compile Include="Linq\Random.cs" />
+    <Compile Include="Linq\RandomSubset.cs" />
+    <Compile Include="Linq\Rank.cs" />
+    <Compile Include="Linq\Repeat.cs" />
+    <Compile Include="Linq\RunLengthEncode.cs" />
+    <Compile Include="Linq\Scan.cs" />
+    <Compile Include="Linq\Segment.cs" />
+    <Compile Include="Linq\SequenceException.cs" />
+    <Compile Include="Linq\SingleOrFallback.cs" />
+    <Compile Include="Linq\SkipUntil.cs" />
+    <Compile Include="Linq\Slice.cs" />
+    <Compile Include="Linq\SortedMerge.cs" />
+    <Compile Include="Linq\Split.cs" />
+    <Compile Include="Linq\Subsets.cs" />
+    <Compile Include="Linq\TagFirstLast.cs" />
+    <Compile Include="Linq\TakeEvery.cs" />
+    <Compile Include="Linq\TakeLast.cs" />
+    <Compile Include="Linq\TakeUntil.cs" />
+    <Compile Include="Linq\ToHashSet.cs" />
+    <Compile Include="Linq\Trace.cs" />
+    <Compile Include="Linq\Windowed.cs" />
+    <Compile Include="Linq\Zip.stub.cs" />
+    <Compile Include="Linq\ZipLongest.cs" />
+    <Compile Include="Linq\ZipShortest.cs" />
+    <Compile Include="MathExtensions.cs" />
+    <Compile Include="ArrayExtensions.cs" />
+    <Compile Include="Collections\NameValueCollectionExtensions.cs" />
+    <Compile Include="ListExtensions.cs" />
+    <Compile Include="Net\NetworkHelpers.cs" />
+    <Compile Include="Net\RequestContext.cs" />
+    <Compile Include="ObjectFormatter.cs" />
+    <Compile Include="DateTimeExtensions.cs" />
+    <Compile Include="ExceptionHelpers.cs" />
+    <Compile Include="Internal\DefaultTimeProvider.cs" />
+    <Compile Include="Internal\TimeProvider.cs" />
+    <Compile Include="JetBrains.cs" />
+    <Compile Include="Net\IPAddressCollection.cs" />
+    <Compile Include="Net\IPNetwork.cs" />
+    <Compile Include="Net\IPNetworkCollection.cs" />
+    <Compile Include="Optional.cs" />
+    <Compile Include="ObjectHelpers.cs" />
+    <Compile Include="PathHelpers.cs" />
+    <Compile Include="Process\Options.cs" />
+    <Compile Include="Process\ProcessHelpers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\Emit\ILGeneratorExtensions.cs" />
+    <Compile Include="Reflection\ReflectionHelpers.cs" />
+    <Compile Include="Resources\ManifestResourceManager.cs" />
+    <Compile Include="StackHelpers.cs" />
+    <Compile Include="StringBuilderExtensions.cs" />
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="SystemTime.cs" />
+    <Compile Include="ThingEnumerator.cs" />
+    <Compile Include="Threading\GuardedReaderWriterLock.cs" />
+    <Compile Include="Threading\TimerExtensions.cs" />
+    <Compile Include="Threading\WriteGuard.cs" />
+    <Compile Include="Threading\ReadGuard.cs" />
+    <Compile Include="TypeExtensions.cs" />
+    <Compile Include="UniqueIdGenerator.cs" />
+    <Compile Include="Xml\InvalidAttributeError.cs" />
+    <Compile Include="Xml\InvalidDataError.cs" />
+    <Compile Include="Xml\InvalidElementError.cs" />
+    <Compile Include="Xml\MissingAttributeError.cs" />
+    <Compile Include="Xml\ValueParseError.cs" />
+    <Compile Include="Xml\XElementExtensions.cs" />
+    <Compile Include="Xml\XElementSelectors.cs" />
+    <Compile Include="Xml\XmlFragmentReader.cs" />
+    <Compile Include="Xml\XmlParseError.cs" />
+    <Compile Include="Xml\XmlWriterExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Linq\Fold.g.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Fold.g.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
